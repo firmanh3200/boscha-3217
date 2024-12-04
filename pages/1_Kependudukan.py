@@ -122,7 +122,7 @@ with st.container(border=True):
     # STATUS KAWIN    
     with tab4:
         st.subheader('Penduduk Kabupaten Bandung Barat menurut Status Kawin')
-        url4 = 'https://data.jabarprov.go.id/api-backend//bigdata/disdukcapil_2/od_15135_jumlah_penduduk_berdasarkan_status_perkawinan_v1?limit=3000&skip=0&where=%7B%22nama_kabupaten_kota%22%3A%5B%22KOTA+BANJAR%22%5D%7D'
+        url4 = 'https://data.jabarprov.go.id/api-backend//bigdata/disdukcapil_2/od_15135_jumlah_penduduk_berdasarkan_status_perkawinan_v1?limit=3000&skip=0&where=%7B%22kode_kabupaten_kota%22%3A%5B%223213%22%5D%7D'
 
         response4 = requests.get(url4)
         data4 = response4.json()
